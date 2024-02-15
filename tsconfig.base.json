@@ -1,0 +1,29 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nest-microservice-boilerplate/env": ["libs/env/src/index.ts"],
+      "@nest-microservice-boilerplate/health": ["libs/health/src/index.ts"],
+      "@nest-microservice-boilerplate/interface": [
+        "libs/interface/src/index.ts"
+      ],
+      "@nest-microservice-boilerplate/kafka": ["libs/kafka/src/index.ts"],
+      "@nest-microservice-boilerplate/mongo": ["libs/mongo/src/index.ts"],
+      "@nest-microservice-boilerplate/redis": ["libs/redis/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
